@@ -1,0 +1,14 @@
+List of References to resources used in Project
+-----------------------------------------------
+
+Macondo Font: https://fonts.google.com/specimen/Macondo
+Wizard Sprite: https://craftpix.net/freebies/free-wizard-sprite-sheets-pixel-art/
+Cave Background: https://admurin.itch.io/parallax-backgrounds-caves
+Dragon Sprite: https://opengameart.org/content/dragon-fully-animated
+Button: https://opengameart.org/content/ui-button
+Fireballs: https://opengameart.org/content/high-res-fire-ball
+Platforms: https://opengameart.org/content/2d-platform-ground-stone-tiles
+Small Banner: https://www.freepik.com/premium-photo/old-mediaeval-paper-sheet-horizontal-parchment-scroll-isolated-white-background_24194361.htm
+Scroll: https://www.pinterest.com/pin/795026140441538208/
+Stone Background: https://www.freepik.com/free-photo/brick-wall-background-texture_32249529.htm#query=cobblestone%20background&position=12&from_view=search&track=ais
+Ravenmore Icons: https://opengameart.org/content/fantasy-icon-pack-by-ravenmore-0
