@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Mode</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='background.css') }}">
+</head>
+<body>
+    <script src="../static/phaser.min.js" type="text/javascript"></script>
+    <script>
+        let questionData = {{ questions| tojson|safe }}
+    </script>
+    <script id="study_js" questions ="{{ questions }}" src="../static/js/studyMode.js"></script>
+    <div id="phaser-game"></div>
+<a href="/dashboard">Go Back</a>
+</body>
+</html>

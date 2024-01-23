@@ -1,0 +1,643 @@
+{
+  "id": "5c5d295c-b828-4792-b5f0-ae2f82716cd0",
+  "version": "2.0",
+  "name": "TestingMode",
+  "url": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+  "tests": [{
+    "id": "b622ad98-feb5-4bda-9df4-04d89f77f033",
+    "name": "Directions - Appearance",
+    "commands": [{
+      "id": "aa7067e9-0222-491b-a169-b22a11687fd8",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd633b2d-3c70-4179-8a41-394b349a5720",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "653x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc6e914d-64ce-4a14-8daf-a2b8e61cb47c",
+      "comment": "",
+      "command": "click",
+      "target": "id=testing_set",
+      "targets": [
+        ["id=testing_set", "id"],
+        ["css=#testing_set", "css:finder"],
+        ["xpath=//select[@id='testing_set']", "xpath:attributes"],
+        ["xpath=//div[@id='testingmode']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb10d2f5-0876-4f66-be72-addf01404166",
+      "comment": "",
+      "command": "select",
+      "target": "id=testing_set",
+      "targets": [],
+      "value": "label=test cards"
+    }, {
+      "id": "0db3428e-b54f-4866-aa26-78c7d5dcdcc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#testing_mode > .icon",
+      "targets": [
+        ["css=#testing_mode > .icon", "css:finder"],
+        ["xpath=//img[@alt='Testing Mode']", "xpath:img"],
+        ["xpath=//a[@id='testing_mode']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb9d25c7-eb95-46c7-828a-dabfde91d9c7",
+      "comment": "Popup with directions should show on screen, game paused in background",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e3c46baf-323b-45b8-8e7b-296a4d8805f9",
+    "name": "Directions - Ok Button",
+    "commands": [{
+      "id": "1835ea0e-f58d-4c22-b2b6-f064c658a377",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47126663-1002-4aa4-a0b6-afce5a5bdd91",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db677a5b-7426-4c58-9a8e-d2d25bdc28f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=testing_set",
+      "targets": [
+        ["id=testing_set", "id"],
+        ["css=#testing_set", "css:finder"],
+        ["xpath=//select[@id='testing_set']", "xpath:attributes"],
+        ["xpath=//div[@id='testingmode']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aaacb7f-e0fd-4d31-b891-3f349fc9de33",
+      "comment": "",
+      "command": "select",
+      "target": "id=testing_set",
+      "targets": [],
+      "value": "label=test cards"
+    }, {
+      "id": "10b35dba-9b54-4394-8e21-48e4a4c2a1c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#testing_mode > .icon",
+      "targets": [
+        ["css=#testing_mode > .icon", "css:finder"],
+        ["xpath=//img[@alt='Testing Mode']", "xpath:img"],
+        ["xpath=//a[@id='testing_mode']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8c4c516-6fb8-40b5-965e-0ceb17d41f0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3364940-0e13-486d-95c9-469402011089",
+      "comment": "Popup disappears, game starts",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "21139beb-30d1-4625-85fe-d8e1d1a806ee",
+    "name": "Player Attack",
+    "commands": [{
+      "id": "184a6d36-b8ab-4b59-9ba2-a59bb8a75fa0",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc30d3ad-421e-4d4b-87c7-5be907daaa21",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2933c83e-42e8-4752-8b02-f18bedca1180",
+      "comment": "",
+      "command": "click",
+      "target": "id=testing_set",
+      "targets": [
+        ["id=testing_set", "id"],
+        ["css=#testing_set", "css:finder"],
+        ["xpath=//select[@id='testing_set']", "xpath:attributes"],
+        ["xpath=//div[@id='testingmode']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "765ea7d2-67c0-4544-a665-dee487f491ac",
+      "comment": "",
+      "command": "select",
+      "target": "id=testing_set",
+      "targets": [],
+      "value": "label=test cards"
+    }, {
+      "id": "2122638f-7602-423d-a78c-607ed94f30c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#testing_mode > .icon",
+      "targets": [
+        ["css=#testing_mode > .icon", "css:finder"],
+        ["xpath=//img[@alt='Testing Mode']", "xpath:img"],
+        ["xpath=//a[@id='testing_mode']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32173965-d9e7-49bf-bebe-dfb60b0c6da5",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efa3c8a5-0a9d-47c5-a507-bf8d54bb7269",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='outer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f26ed48-c39f-4683-afc7-e672f645235f",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='outer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "avere"
+    }, {
+      "id": "d897f2ef-5f8e-47b3-b361-60c90962684e",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd4f0ae4-f328-47e2-b466-df04ff34d320",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bac922ff-1d59-4d55-a61e-6d39a973661f",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "622c4253-219c-4147-aa18-0d3683de3aeb",
+    "name": "Player Attack - Launch Spell",
+    "commands": [{
+      "id": "18b92673-8869-4bfb-a8eb-dda0aa868904",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79ed2a86-6727-4e84-8a83-103ecd6e8f70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f0bf9b8-2877-4ecb-9d08-8c360cc50929",
+      "comment": "",
+      "command": "click",
+      "target": "id=testing_set",
+      "targets": [
+        ["id=testing_set", "id"],
+        ["css=#testing_set", "css:finder"],
+        ["xpath=//select[@id='testing_set']", "xpath:attributes"],
+        ["xpath=//div[@id='testingmode']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61c29226-0d41-48d6-bb12-05e67ee9582b",
+      "comment": "",
+      "command": "select",
+      "target": "id=testing_set",
+      "targets": [],
+      "value": "label=test cards"
+    }, {
+      "id": "586b6612-8009-4af0-8d85-85cdd6abec71",
+      "comment": "",
+      "command": "click",
+      "target": "css=#testing_mode > .icon",
+      "targets": [
+        ["css=#testing_mode > .icon", "css:finder"],
+        ["xpath=//img[@alt='Testing Mode']", "xpath:img"],
+        ["xpath=//a[@id='testing_mode']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63cfc42c-f9ba-43a0-8526-8da87a4ce830",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "320f65ca-8f65-449d-baa3-56d6310ce6f4",
+      "comment": "Player shoots spell, popup shows when it hits dragon",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "89705817-942b-4be7-8c84-b317f5c5d815",
+    "name": "Health Bars - Appearance",
+    "commands": [{
+      "id": "2cab8cb7-18b9-4f48-9eab-bb82fe7829f7",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3e80e47-6182-473b-88e7-e8e581de2cfe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a89f0ea-f9ad-41c4-a856-6f4b655b59a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65b5616a-b496-4622-a282-22b13b50b3ba",
+      "comment": "Health bars appear over player and dragon",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "332363b8-9e0e-4d31-8835-449a24654a0d",
+    "name": "Health Bars - Player Decrease",
+    "commands": [{
+      "id": "d50c6498-238c-4d5f-a2ca-d3322a7efa26",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd4d5a6b-8400-4cd3-9f94-aa135ef9408d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d42cddba-cbab-4c26-8eaa-ff6b06bef00f",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1173488-eb5f-4d3f-bd10-b845dbf9f6f3",
+      "comment": "Player's health bar shows red when the sprite gets hit",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5af8173b-bc1d-4c87-85b5-bfb7ffba342e",
+    "name": "Health Bars - Dragon Health",
+    "commands": [{
+      "id": "9836529c-ac23-4a79-a026-0ebacfa5714a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccf44ca8-c17c-4fe3-ac11-86ef37ddd3c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82d3d019-4fd6-4d27-92a7-25c93c00dfcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6d4fa5-3012-47da-b94a-4fb0c7c9a47d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='outer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab6c7749-7967-45c9-97ee-4c85ffd6ccd2",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='outer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "avere"
+    }, {
+      "id": "b2ab0adc-48f8-4115-9534-b2e3d39d04b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e31db19a-e107-4289-a961-88ba80ed2f80",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edd42ce2-76e2-4cdf-a939-7de53b085eca",
+      "comment": "Dragon's health decreases when you answer popup correctly",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d99f6821-7c8f-4443-9ad4-66e5141d2691",
+    "name": "Health Bars - Player Movement",
+    "commands": [{
+      "id": "5a7b899b-e4be-4da4-892c-0b35b24be10d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2e5bf65-1ffd-49ec-a88c-990c74105363",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77ffe05b-cc08-4741-87ff-778ce1c8eef7",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "294b8a36-dcfa-4f19-ae22-bcf25b0b8916",
+      "comment": "Health bar stays above the player sprite when it moves",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "141da406-0c2e-4aff-a596-38fc6a762971",
+    "name": "Platforms - Player Downward Collision",
+    "commands": [{
+      "id": "8dfe09b4-61fb-44b9-a786-f239c978b10a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3904eb9e-5f48-4a0f-805f-61394570e6bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "676x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4aad6f76-422f-40c9-8f57-71ff70ef814d",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ffcc5bf-7142-41d5-b482-f2c060c91be0",
+      "comment": "Player jumps on platform and stays there",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c272f097-d8ac-4b16-9ee5-5b6f0627cb2f",
+    "name": "Platforms - Player Upward Collision",
+    "commands": [{
+      "id": "8dc57bde-66f9-4042-8e83-5ffcc692675b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d691a43c-361b-40a5-aed4-20dcad376ec2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "676x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90422b16-9614-4b87-9661-6d091818f4ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f88bb3ad-26f7-46c6-9977-288dd48455ac",
+      "comment": "Player hits its head on platform (doesn't go through)",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1df60a3b-ff30-420d-9e8d-59db34a4e345",
+    "name": "Full Screen - Icon",
+    "commands": [{
+      "id": "f10e17aa-d089-497d-a91a-bc8b078076b8",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5dbe28e-2c85-4198-bf0d-949b927f5380",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "676x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44de9f5a-edd5-46aa-b5cc-e29942295da7",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e7b72f-58cb-415e-9d9a-2946823341f5",
+      "comment": "Click icon twice, enter and exit full screen mode",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "26320c1c-5ec6-4e69-8dd1-8b6928e64e81",
+    "name": "Full Screen - F Key",
+    "commands": [{
+      "id": "4dfb10da-bc44-4262-8e58-0007e40f17ca",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "732776d5-8fef-4add-8bc1-ab0b92bc4719",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "676x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98d7972a-1820-4069-a543-5269e82b57f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df27a13-3b11-4c9c-b1d4-275e2dadbcbf",
+      "comment": "Press F Key, full screen. Press Esc key, not fullscreen",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e0b76ab2-eed1-43c0-96ed-fdba66c48239",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:5000/", "http://127.0.0.1:5000/testing_mode?flashcard_set=test%20cards"],
+  "plugins": []
+}

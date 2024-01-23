@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Flashcard</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='flashcard.css') }}">
+    </head>
+    <body>
+        <script src="static/phaser.min.js" type="text/javascript"></script>
+        <script src="static/scenes/CreateFlashcardsScene.js" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/flashcard.js') }}"></script>
+        <div class="header">
+            <h1>New Flashcard</h1>
+        </div>
+        <div class="container">
+            <div class="new-flashcard">
+                <form action="/create_flashcard" method="POST">
+                    <div class="card">
+                        <!--user input for card--> 
+                        <label for="term"></label>
+                        <input type="text" id="term" name="term" placeholder="Term" minlength="1" required>
+                        <label for="definition"></label>
+                        <input type="text" id="definition" name="definition" placeholder="Definition" minlength="1" required>
+                    </div>
+                    <div class="choose-deck">
+                        <!--user chooses which deck to put flashcard into--> 
+                        <label for="card_set">Flashcard Set: </label>
+                        <select id="card_set" name="card_set" class="set-name">
+                            <!--drop down of sets-->
+                            {% for set_name in flashcard_sets %}
+                            <option value="{{ set_name }}" {% if set_name == current_set %}selected{% endif %}>{{ set_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="add-button">
+                        <button type="button" onclick="sendFlashcardData()">Add Flashcard</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="top-buttons">
+            <a href="/dashboard" class="dashboard">
+                <img src="../static/assets/128/map.png" alt="Dashboard">
+            </a>
+            <a href="/flashcard_set" class="view-sets">
+                <img src="../static/assets/128/tome.png">
+            </a>
+        </div>
+    </body>
+</html>

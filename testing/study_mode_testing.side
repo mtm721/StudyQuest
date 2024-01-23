@@ -1,0 +1,570 @@
+{
+  "id": "197cc92a-115f-4f92-9875-87287d2751b3",
+  "version": "2.0",
+  "name": "learning_game",
+  "url": "http://127.0.0.1:5000",
+  "tests": [{
+    "id": "1c714def-a909-4a6d-865c-d0e6a29a1b52",
+    "name": "study_mode",
+    "commands": [{
+      "id": "fb80015b-47f5-4f0d-9f41-aca6d983ca71",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fb57e00-726a-4eb0-a4aa-e4864da35d15",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf41fe1f-7d66-4580-82d7-41a2fc8201f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=study_set",
+      "targets": [
+        ["id=study_set", "id"],
+        ["css=#study_set", "css:finder"],
+        ["xpath=//select[@id='study_set']", "xpath:attributes"],
+        ["xpath=//div[@id='studymode']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e65db937-4d9b-4f3a-9cfe-62dcec77c62f",
+      "comment": "",
+      "command": "select",
+      "target": "id=study_set",
+      "targets": [],
+      "value": "label=Spanish"
+    }, {
+      "id": "cffafcbb-d3f1-49e2-8ca6-27cb3f3e3d06",
+      "comment": "",
+      "command": "click",
+      "target": "css=#study > .icon",
+      "targets": [
+        ["css=#study > .icon", "css:finder"],
+        ["xpath=//img[@alt='Study Mode']", "xpath:img"],
+        ["xpath=//a[@id='study']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e92947c8-113a-4d9d-b3d6-4a0188e8fbd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a69eca79-e27f-41d8-afc9-aed5b415303a",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16016192-eb1f-43ea-9384-42b5bf438fd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1595dae5-53f9-4ba5-b71f-80d073801c31",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "259ca0ff-9604-4625-92f6-b96f605f0d88",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce16bdab-cf1b-45fb-91b8-f4b717953005",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b557fa01-9c60-4a31-abcd-d045d8cbb470",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba987853-dc8b-44ce-bdfc-7ea1724bd11f",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc211bb1-f120-49af-b117-892033c0cc13",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ae3f16-e1ce-4249-a416-bea1f6ddc87f",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d75ab4dc-92fc-4195-9121-fe939f800f96",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd7e374a-4804-46ce-89d4-f89befa9bed6",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ecfc56a-66ed-4ca2-a8b2-f78bea070ef7",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "516dbd0c-5f29-45f6-ba94-8acdde7d48d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c63b1b13-372e-4af8-99a3-2df75b75eb94",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0988a7b9-fc3f-4817-b8b6-9653186fe8e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4fee0dc-1c7e-4883-a540-7c69c497a0b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e969ec3-8b80-4926-8e83-f5d38674aed9",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f338b0f3-ee58-46bd-900d-4771f2fb6d13",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d7f4c55-77f1-42c6-8e35-b6833b06c102",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d097844-7ef0-43ed-8589-84e8b55e8093",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go Back",
+      "targets": [
+        ["linkText=Go Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/dashboard')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ddc6a9-d7e6-403d-af8e-4f87280b4660",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=selectors",
+      "targets": [
+        ["id=selectors", "id"],
+        ["css=#selectors", "css:finder"],
+        ["xpath=//div[@id='selectors']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "283.1999816894531,201.8000030517578"
+    }, {
+      "id": "8862f096-dd03-4790-b5a1-f83389d61ecc",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=selectors",
+      "targets": [
+        ["id=selectors", "id"],
+        ["css=#selectors", "css:finder"],
+        ["xpath=//div[@id='selectors']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "283.1999816894531,201.8000030517578"
+    }, {
+      "id": "15436d1c-66b0-4ee3-975e-3e88cd59b74d",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=selectors",
+      "targets": [
+        ["id=selectors", "id"],
+        ["css=#selectors", "css:finder"],
+        ["xpath=//div[@id='selectors']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "283.1999816894531,201.8000030517578"
+    }, {
+      "id": "cacfdd1d-81db-4ea0-98d5-04eeaaa4b768",
+      "comment": "",
+      "command": "click",
+      "target": "id=selectors",
+      "targets": [
+        ["id=selectors", "id"],
+        ["css=#selectors", "css:finder"],
+        ["xpath=//div[@id='selectors']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "815683a3-4698-43e5-b8c1-499b9b0a9c0c",
+      "comment": "",
+      "command": "select",
+      "target": "id=study_set",
+      "targets": [],
+      "value": "label=Spanish"
+    }, {
+      "id": "9cbd6760-3d86-4f73-841f-798fe7c23f0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#study > .icon",
+      "targets": [
+        ["css=#study > .icon", "css:finder"],
+        ["xpath=//img[@alt='Study Mode']", "xpath:img"],
+        ["xpath=//a[@id='study']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7208e520-ceaf-4c57-9cb4-38a808119ab0",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48eb5c0d-f827-4a52-8194-4649f9435e3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "460b395b-ce3e-4396-9acb-3ce6081b53ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d2e682e-165f-4931-a6bc-0b7c41d15f4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fae407b-7ccc-4cc9-a9d3-ac6f8887f1c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7de686b8-7dd0-489d-8871-3e4ac0883ce3",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": "766,584"
+    }, {
+      "id": "6c132bc9-1f3a-46bd-8ffa-7b19ac087d15",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": "766,584"
+    }, {
+      "id": "f9687b5a-1044-4556-99ae-c2d84094cd4c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": "766,584"
+    }, {
+      "id": "e017af73-1784-43a9-8bac-1d2c50e728fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a837a09-e5b7-428f-9e6f-a4bd9476927a",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": "764,604"
+    }, {
+      "id": "0a65d378-1927-4b08-af1c-bf7e6123d7a4",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": "764,604"
+    }, {
+      "id": "07971530-9e16-4f02-8265-91264bd5d56e",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": "764,604"
+    }, {
+      "id": "e0c919cc-f2c5-4a37-9fc4-24ac188dec6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c42fc0e9-9e0a-4745-a1f2-24cd5e2a1cb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb898391-444a-48ae-bc88-c5117b49c07d",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "263bb09a-b553-47d5-b25c-f9a708063933",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96ae0b42-ac6d-46a8-8df0-c36ccf211ea9",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a219520-5430-4070-8962-a983527d0310",
+      "comment": "",
+      "command": "click",
+      "target": "css=canvas",
+      "targets": [
+        ["css=canvas", "css:finder"],
+        ["xpath=//div[@id='phaser-game']/canvas", "xpath:idRelative"],
+        ["xpath=//canvas", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ab32b843-d2ad-4e89-ab3a-8c743e2f0e4d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:5000/"],
+  "plugins": []
+}

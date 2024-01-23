@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='shop.css') }}">
+</head>
+<body>
+    <script src="../static/phaser.min.js" type="text/javascript"></script>
+    <script src="../static/scenes/ShopScene.js" type="module"></script>
+    <div id="phaser-game"></div>
+    <div id="points" data-points="{{ player_points }}"></div>
+    <script>
+       let playerInventoryData = {{ player_inventory_json | tojson|safe }}
+       let shopItemsData = {{ shop_items_json | tojson|safe }}
+    </script>
+    <script src="{{ url_for('static', filename='js/shop.js') }}"></script>
+<a href="/dashboard" id="dashboard">
+    <img src="../static/assets/128/map.png" height = "60" width = "60" alt="Dashboard">
+</a>
+</body>
+</html>

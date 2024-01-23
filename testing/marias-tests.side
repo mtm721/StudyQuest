@@ -1,0 +1,173 @@
+{
+  "id": "1640b2e2-94f4-4232-986c-31dc342bbd0f",
+  "version": "2.0",
+  "name": "marias tests",
+  "url": "http://127.0.0.1:5000/",
+  "tests": [{
+    "id": "4196dd90-9090-42ff-9fd7-b5cda5c2c119",
+    "name": "Untitled",
+    "commands": [{
+      "id": "118f5cf3-84e1-43c1-8de9-19c231f649e9",
+      "comment": "Enter a set name",
+      "command": "type",
+      "target": "id=set_name",
+      "targets": [],
+      "value": "Places"
+    }, {
+      "id": "0aa9345c-942d-43ed-8f23-8ce8935c07c9",
+      "comment": "Creates the new set",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Set')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "03344927-86ae-4747-a40f-a94b371f6035",
+      "comment": "Create a new flashcard",
+      "command": "click",
+      "target": "linkText=Create a Flashcard",
+      "targets": [
+        ["linkText=Create a Flashcard", "linkText"],
+        ["css=.create-flashcard > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Create a Flashcard')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/flashcard')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create a Flashcard')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "01db6922-efb4-4a0a-8577-6b75c3ff99b1",
+      "comment": "Input term",
+      "command": "type",
+      "target": "id=term",
+      "targets": [
+        ["id=term", "id"],
+        ["name=term", "name"],
+        ["css=#term", "css:finder"],
+        ["xpath=//input[@id='term']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Rome"
+    }, {
+      "id": "99fbd097-a5f8-43a9-b6b2-55444d1adafa",
+      "comment": "Input definition",
+      "command": "type",
+      "target": "id=definition",
+      "targets": [
+        ["id=definition", "id"],
+        ["name=definition", "name"],
+        ["css=#definition", "css:finder"],
+        ["xpath=//input[@id='definition']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Italy"
+    }, {
+      "id": "1e10ffcd-7124-415b-b62e-d62202bef624",
+      "comment": "Add new flashcard to set",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Flashcard')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "4dbd02f5-1510-4d6b-bb12-1f036b186f64",
+      "comment": "Edit flashcard",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.card-item > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/edit_flashcard?card_set=places&term=seoul')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "5de785e5-76a0-4a03-a395-68b6fc069cb3",
+      "comment": "Change term",
+      "command": "type",
+      "target": "id=term",
+      "targets": [
+        ["id=term", "id"],
+        ["name=term", "name"],
+        ["css=#term", "css:finder"],
+        ["xpath=//input[@id='term']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Athens"
+    }, {
+      "id": "43da295a-b099-49ef-a13e-55ca51e47952",
+      "comment": "Change definition",
+      "command": "type",
+      "target": "id=definition",
+      "targets": [
+        ["id=definition", "id"],
+        ["name=definition", "name"],
+        ["css=#definition", "css:finder"],
+        ["xpath=//input[@id='definition']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Greece"
+    }, {
+      "id": "c105df96-d7b0-4312-9815-81b20bdde16f",
+      "comment": "Update flashcard",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Flashcard')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "c5a5d76a-ea87-4aa6-afff-8be32b00416f",
+      "comment": "Delete flashcard",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/delete_flashcard?card_set=places&term=seoul')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "bfa44117-6200-4a00-b96a-96cd58278539",
+      "comment": "Delete flashcard set",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=.delete", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"confirmDelete('places')\"]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }]
+  }],
+  "suites": [{
+    "id": "5b2c0c4d-b769-4e06-931e-d78ce7d80a32",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4196dd90-9090-42ff-9fd7-b5cda5c2c119"]
+  }],
+  "urls": [],
+  "plugins": []
+}

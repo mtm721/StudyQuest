@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--<meta content="user-scalable=0, initial-scale=1,minimum-scale=1, maximum-scale=1, width=device-width, minimal-ui=1" name="viewport"></meta>-->
+        <title>Testing Mode</title>
+        <style>
+            canvas {
+                width:100%;
+            }
+        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='background.css') }}">
+    </head>
+</html>
+<script>
+    var questionData = {{ questions| tojson|safe }};
+    console.log(JSON.stringify(questionData));
+</script>
+<script src="static/phaser.min.js" type="text/javascript">
+</script>
+<script src="static/scenes/TestingModeScene.js" type="text/javascript">
+</script>
+<script src="static/main.js" type="text/javascript">
+</script>
+
+<body>
+    <div id="phaser-game"></div>
+</body>

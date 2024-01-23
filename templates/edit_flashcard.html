@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Flashcard</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='editflashcard.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Edit Flashcard</h1>
+        </div>
+        <div class="container">
+            <div class="edit-card">
+                <form action="/update_flashcard" method="POST">
+                    <div class="card">
+                        <input type="hidden" name="old_term" value="{{ flashcard.term }}">
+                        <label for="term"></label>
+                        <input type="text" id="term" name="term" value="{{ flashcard.term }}" required>
+                        <label for="definition"></label>
+                        <input type="text" id="definition" name="definition" value="{{ flashcard.definition }}" required>
+                        <input type="hidden" name="card_set" value="{{ set_name }}">
+                    </div>
+                    <div class="update-flashcard">
+                        <button type="submit">Update Flashcard</button>
+                    </div>
+                </form>
+                <div class="cancel">
+                    <a href="/individual_set?card_set={{ set_name }}">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-buttons">
+            <a href="/dashboard" class="dashboard">
+                <img src="../static/assets/128/map.png" alt="Dashboard">
+            </a>
+            <a href="/flashcard_set" class="view-sets">
+                <img src="../static/assets/128/tome.png">
+            </a>
+        </div>
+    </body>
+</html>

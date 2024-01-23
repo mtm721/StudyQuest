@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single Flashcard Set</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='singleset.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>{{ current_set }}</h1>
+        </div>
+        <ul class="card-set">
+            <!--shows flashcards in one selected set--> 
+            {% for flashcard in flashcards %}
+            <li class="card-item">
+                <div class="terms">
+                    <strong>{{ flashcard.term }}</strong> {{ flashcard.definition }}
+                </div>
+                <a href="/edit_flashcard?card_set={{ current_set }}&term={{ flashcard.term }}">Edit</a>
+                <a href="/delete_flashcard?card_set={{ current_set }}&term={{ flashcard.term }}">Delete</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="create-flashcard">
+            <a href="/flashcard?current_set={{ current_set }}">Create a Flashcard</a>
+        </div>
+        <div class="header2">
+            <h2>Flashcard Sets</h2>
+        </div>
+        <div class="other-sets">
+            <ul>
+                <!--shows other flashcard sets--> 
+                {% for set_name in flashcard_sets %}
+                <li><a href="/individual_set?card_set={{ set_name }}">{{ set_name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="top-buttons">
+            <a href="/flashcard_set" class="view-sets">
+                <img src="../static/assets/128/tome.png" alt="Flashcard Sets">
+            </a>
+            <a href="/dashboard" class="dashboard">
+                <img src="../static/assets/128/map.png" alt="Dashboard">
+            </a>
+        </div>
+    </body>
+</html>

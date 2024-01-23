@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+    <body>
+
+        <div id="topbar">
+            <a id="banner">
+                <p>Welcome, {{ username }}. | {{ points }} points</p>
+            </a>
+            <a href="/logout" id="logout" class="options">
+                <img src="../static/assets/64/backpack.png" height="32" width="32" alt="Logout" title="Logout">
+            </a>
+            <a href="/profile" id="profile" class="options">
+                <img src="../static/assets/64/tools.png" height="32" width="32" alt="Profile" title="Edit Profile">
+            </a>
+        </div>
+
+        <div id="main">
+            <div id="selectors">
+                <div id="flashcards" class="selector">
+                    <a href="/flashcard_set" class="link">
+                        <img src="../static/assets/128/tome.png" height="128" width="128" alt="Flashcards" title="Flashcards" class="icon">
+                    </a>
+                </div>
+                <div id="studymode" class="selector">
+                    <a id="study" class="link">
+                        <img src="../static/assets/128/envelope.png" height="128" width="128" alt="Study Mode" title="Study Mode" class="icon">
+                    </a>
+                </div>
+                <div id="testingmode" class="selector">
+                    <a id="testing_mode" class="link">
+                        <img src="../static/assets/128/upg_sword.png" height="128" width="128" alt="Testing Mode" title="Testing Mode" class="icon">
+                    </a>
+                </div>
+                <div id="shop" class="selector">
+                    <a href="/shop" class="link">
+                        <img src="../static/assets/128/coin.png" height="128" width="128" alt="Item Shop" title="Item Shop" class="icon">
+                    </a>
+                </div>
+
+                <div id="chooseFlashcard">
+                    <!--  dropdown menu for choosing a flashcard set -->
+                    <select id="flashcard_set" onchange="getSet()">
+                        <option value="select">Select</option>
+                        {% for set_name in flashcard_sets %}
+                        <option value="{{ set_name }}">{{ set_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+    </body>
+</html>

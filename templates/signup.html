@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup | Gamified Studying</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+    <body>
+        <div id="scrollBox">
+            <img id="scroll" src="../static/assets/background/scroll%20background.png" alt="Scroll background">
+        </div>
+        <div id="signupbox">
+            <h1 id="signup">Signup</h1>
+
+            {% if error != "" %}
+                <p style="color: rgba(160, 30, 45, 0.9)"><b>{{error}}</b></p>
+            {% endif %}
+
+            <form action="/signup" method="POST" id="signup_form">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" class="prompts" placeholder="Username" minlength="6" maxlength="16" required><br>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" class="prompts" placeholder="Email" required><br>
+                <label for="passwordInit"></label>
+                <input type="password" id="passwordInit" name="passwordInit" class="prompts" placeholder="Password" minlength="8" maxlength="16" required><br>
+                <label for="passwordConf"></label>
+                <input type="password" id="passwordConf" name="passwordConf" class="prompts" placeholder="Confirm Password" minlength="8" maxlength="16" required><br>
+                <input type="submit" id="button" value="Create account">
+            </form>
+            <a href="/" id="backToLogin">
+                <h2 style="color: rgba(0, 0, 0, 1.0);">Back to login</h2>
+            </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Gamified Studying</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+    <body>
+        <div id="scrollBox">
+            <img id="scroll" src="../static/assets/background/scroll%20background.png" alt="Scroll background">
+        </div>
+        <div id="loginBox">
+            <h1 id="title" class="prompts">~ STUDY QUEST ~</h1>
+            <h2 id="loginMessage" class="prompts">Please log in with your credentials.</h2>
+
+            {% if error != "" %}
+                <p id="error_msg" style="color: rgba(160, 30, 45, 0.9)"><i>{{error}}</i></p>
+            {% endif %}
+
+            <!-- login form: will take a username and a password; using arbitrary length requirements of 1 and 32 -->
+            <form action="/dashboard" method="POST" id="login_form">
+                <label for="username" id="user"></label>
+                <input type="text" id="username" class="login" name="username" placeholder="Username" minlength="1" maxlength="32" required><br>
+                <label for="password" id="pass"></label>
+                <input type="password" id="password" class="login" name="password" placeholder="Password" minlength="1" maxlength="32" required><br>
+                <input type="submit" id="button" value="Login">
+            </form>
+
+            <a href="/signup" id="signup">
+                <!-- with hyperlinked text that has color applied, throw in <u> tags to make the underline color uniform -->
+                <h2 class="prompts"><u>Create an account</u></h2>
+            </a>
+        </div>
+    </body>
+</html>

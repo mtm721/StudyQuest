@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}">
+</head>
+    <body>
+
+        <div id="scrollBox">
+            <img id="scroll" src="../static/assets/background/scroll%20background.png" alt="Scroll background">
+        </div>
+        <div id="info">
+
+            <h1 id="title" class="prompts">Profile</h1>
+
+            <div id="usernameContainer" class="containers">
+                <div id="usernameBox" class="choice">
+                    <p id="username">Username: {{ username }}</p>
+                    <button type="button" id="editUsername" onclick="openDataBox('newUsernameInput')">Change username</button>
+                </div>
+                <div id="newUsernameInput" style="visibility: hidden;" class="boxes">
+                    <br><label for="newUsername">New username: </label>
+                    <input type="text" id="newUsername" name="username">
+                    <button type="button" onclick="updateUsername('newUsername')">Update</button>
+                </div>
+            </div>
+
+            <div id="passwordContainer" class="containers">
+                <div id="passwordBox" class="choice">
+                    <p id="password">Password</p>
+                    <button type="button" id="editPassword" onclick="openDataBox('newPasswordInput')">Change password</button>
+                </div>
+                <div id="newPasswordInput" style="visibility: hidden;" class="boxes">
+                    <br><label for="oldPassword">Old password: </label>
+                    <input type="password" id="oldPassword">
+                    <br><label for="newPassword">New password: </label>
+                    <input type="password" id="newPassword">
+                    <br><label for="newPasswordConf">Confirm new password: </label>
+                    <input type="password" id="newPasswordConf" name="password">
+                    <button type="button" onclick="updatePassword('oldPassword', 'newPassword', 'newPasswordConf')">Update</button>
+                </div>
+            </div>
+
+            <div id="emailContainer" class="containers">
+                <div id="emailBox" class="choice">
+                    <p id="email">Email: {{ email }}</p>
+                    <button type="button" id="editEmail" onclick="openDataBox('newEmailInput')">Change email</button>
+                </div>
+                <div id="newEmailInput" style="visibility: hidden;" class="boxes">
+                    <br><label for="newEmail">New email: </label>
+                    <input type="email" id="newEmail" name="email">
+                    <button type="button" onclick="updateEmail('newEmail')">Update</button>
+                </div>
+            </div>
+
+
+            <div id="bottom">
+                <h3 id="points">Points: {{ points }}</h3>
+                <a href="/dashboard" id="dashboard" class="prompts">
+                    <h3>Back to Dashboard</h3>
+                </a>
+            </div>
+
+
+        </div>
+
+        <script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flashcard Sets</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='flashcardset.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Flashcard Sets</h1>
+        </div>
+        <ul class="flashcard_set_list">
+            <!--list of created flashcard sets--> 
+            {% for set_name in flashcard_sets %}
+            <li>
+                <a href="/individual_set?card_set={{ set_name }}">{{ set_name }}</a>
+                <a href="#" onclick="confirmDelete('{{ set_name }}')" class="delete">Delete</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="new-set">
+            <div class="header2">
+                <h2>Create New Set</h2>
+            </div>
+            <div id="newSetInput">
+            <!--user creates new flashcard set--> 
+                <label for="set_name">Set Name: </label>
+                <input type="text" id="set_name" name="set_name" required>
+                <button type="submit" onclick="sendFlashcardSetData()">Create Set</button>
+            </div>
+        </div>
+        <div class="top-buttons">
+            <a href="/dashboard" class="dashboard">
+                <img src="../static/assets/128/map.png" alt="Dashboard">
+            </a>
+        </div>
+        <script>
+            function confirmDelete(setName) {
+                var isConfirmed = confirm("Are you sure you want to delete " + setName + "?");
+                if (isConfirmed) {
+                    window.location.href = "/delete_set?card_set=" + setName;
+                }
+            }
+        </script>
+        <script src="{{ url_for('static', filename='js/flashcardset.js') }}"></script>
+    </body>
+</html>
