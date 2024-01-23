@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module app</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>app</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href="..">index</a><br><a href="file:/home/thomas/PycharmProjects/csc450-fa23-project-team-6/app.py">/home/thomas/PycharmProjects/csc450-fa23-project-team-6/app.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="flask.blueprints.html">flask.blueprints</a><br>
+<a href="flask.cli.html">flask.cli</a><br>
+<a href="flask.config.html">flask.config</a><br>
+<a href="flask.ctx.html">flask.ctx</a><br>
+<a href="flask.globals.html">flask.globals</a><br>
+</td><td width="25%" valign=top><a href="flask.helpers.html">flask.helpers</a><br>
+<a href="flask.json.html">flask.json</a><br>
+<a href="flask.logging.html">flask.logging</a><br>
+<a href="pathlib.html">pathlib</a><br>
+<a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="flask.sansio.html">flask.sansio</a><br>
+<a href="secrets.html">secrets</a><br>
+<a href="flask.sessions.html">flask.sessions</a><br>
+<a href="flask.signals.html">flask.signals</a><br>
+<a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top><a href="typing.html">typing</a><br>
+<a href="flask.templating.html">flask.templating</a><br>
+<a href="flask.typing.html">flask.typing</a><br>
+<a href="flask.wrappers.html">flask.wrappers</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-buy_item"><strong>buy_item</strong></a>()</dt><dd><tt>Accepts&nbsp;JSON&nbsp;POST&nbsp;data&nbsp;to&nbsp;handle&nbsp;purchases&nbsp;that&nbsp;a&nbsp;player&nbsp;makes&nbsp;in&nbsp;the&nbsp;item&nbsp;shop,&nbsp;adding&nbsp;the&nbsp;item&nbsp;to&nbsp;their&nbsp;inventory&nbsp;and&nbsp;deducting&nbsp;from<br>
+their&nbsp;points&nbsp;the&nbsp;cost&nbsp;of&nbsp;the&nbsp;purchased&nbsp;item.<br>
+:return:&nbsp;response&nbsp;with&nbsp;200&nbsp;status&nbsp;code&nbsp;to&nbsp;respond&nbsp;back&nbsp;to&nbsp;shop.js</tt></dd></dl>
+ <dl><dt><a name="-create_flashcard"><strong>create_flashcard</strong></a>()</dt><dd><tt>Accepts&nbsp;JSON&nbsp;POST&nbsp;data&nbsp;for&nbsp;a&nbsp;newly&nbsp;created&nbsp;flashcard&nbsp;and&nbsp;inserts&nbsp;it&nbsp;into&nbsp;the&nbsp;database,&nbsp;tying&nbsp;it&nbsp;to&nbsp;the&nbsp;specified&nbsp;set.<br>
+:return:&nbsp;200&nbsp;response&nbsp;status&nbsp;to&nbsp;respond&nbsp;back&nbsp;to&nbsp;flashcard.js</tt></dd></dl>
+ <dl><dt><a name="-create_new_set"><strong>create_new_set</strong></a>()</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;set&nbsp;named&nbsp;by&nbsp;set_name&nbsp;and&nbsp;inserts&nbsp;initial&nbsp;record&nbsp;into&nbsp;database&nbsp;with&nbsp;filler&nbsp;term&nbsp;and&nbsp;definition&nbsp;values.<br>
+:return:&nbsp;redirect&nbsp;to&nbsp;/flashcard_set&nbsp;to&nbsp;display&nbsp;the&nbsp;list&nbsp;of&nbsp;all&nbsp;flashcard&nbsp;sets</tt></dd></dl>
+ <dl><dt><a name="-create_new_user"><strong>create_new_user</strong></a>()</dt><dd><tt>Accepts&nbsp;POST&nbsp;form&nbsp;data&nbsp;from&nbsp;signup.html&nbsp;that&nbsp;verifies&nbsp;input&nbsp;(username&nbsp;is&nbsp;unique&nbsp;and&nbsp;passwords&nbsp;match);&nbsp;if&nbsp;so,&nbsp;inserts<br>
+new&nbsp;player&nbsp;values&nbsp;into&nbsp;database&nbsp;and&nbsp;inserts&nbsp;a&nbsp;Player&nbsp;object&nbsp;into&nbsp;active_players&nbsp;for&nbsp;the&nbsp;new&nbsp;user,&nbsp;and&nbsp;brings&nbsp;them&nbsp;to&nbsp;the&nbsp;dashboard.<br>
+:return:&nbsp;dashboard.html&nbsp;if&nbsp;input&nbsp;is&nbsp;valid,&nbsp;signup.html&nbsp;+&nbsp;error&nbsp;if&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-dashboard"><strong>dashboard</strong></a>()</dt><dd><tt>Used&nbsp;when&nbsp;players&nbsp;navigate&nbsp;around&nbsp;the&nbsp;site&nbsp;and&nbsp;press&nbsp;"Go&nbsp;back"&nbsp;or&nbsp;"Back&nbsp;to&nbsp;dashboard"&nbsp;anywhere<br>
+:return:&nbsp;dashboard.html</tt></dd></dl>
+ <dl><dt><a name="-delete_flashcard"><strong>delete_flashcard</strong></a>()</dt><dd><tt>Takes&nbsp;the&nbsp;GET&nbsp;request&nbsp;arguments&nbsp;(flashcard&nbsp;term&nbsp;and&nbsp;set&nbsp;name)&nbsp;and&nbsp;removes&nbsp;the&nbsp;flashcard&nbsp;from&nbsp;the&nbsp;database&nbsp;specified&nbsp;by&nbsp;them.<br>
+:return:</tt></dd></dl>
+ <dl><dt><a name="-edit_flashcard"><strong>edit_flashcard</strong></a>()</dt><dd><tt>Brings&nbsp;player&nbsp;to&nbsp;the&nbsp;edit&nbsp;page,&nbsp;where&nbsp;they&nbsp;can&nbsp;edit&nbsp;the&nbsp;term&nbsp;and&nbsp;definition&nbsp;for&nbsp;a&nbsp;given&nbsp;flashcard.<br>
+:return:&nbsp;edit_flashcard.html&nbsp;with&nbsp;present&nbsp;values&nbsp;for&nbsp;the&nbsp;flashcard&nbsp;+&nbsp;the&nbsp;set&nbsp;it&nbsp;belongs&nbsp;to</tt></dd></dl>
+ <dl><dt><a name="-flashcard_set"><strong>flashcard_set</strong></a>()</dt><dd><tt>Essentially&nbsp;the&nbsp;landing&nbsp;page&nbsp;for&nbsp;flashcards;&nbsp;shows&nbsp;players&nbsp;the&nbsp;different&nbsp;flashcard&nbsp;sets&nbsp;that&nbsp;they&nbsp;have&nbsp;and&nbsp;gives&nbsp;them<br>
+the&nbsp;option&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;flashcard&nbsp;(via&nbsp;a&nbsp;link&nbsp;in&nbsp;flashcardset.html)&nbsp;or&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;flashcard&nbsp;set.<br>
+:return:&nbsp;flashcardset.html&nbsp;with&nbsp;flashcard&nbsp;sets&nbsp;that&nbsp;the&nbsp;player&nbsp;has,&nbsp;if&nbsp;any</tt></dd></dl>
+ <dl><dt><a name="-index"><strong>index</strong></a>()</dt><dd><tt>Receives&nbsp;requests&nbsp;for&nbsp;directory&nbsp;root&nbsp;("/")&nbsp;and&nbsp;/login&nbsp;and&nbsp;responds&nbsp;accordingly&nbsp;based&nbsp;on&nbsp;the&nbsp;request's&nbsp;cookie&nbsp;value&nbsp;(if&nbsp;present).<br>
+:return:&nbsp;redirect&nbsp;to&nbsp;/dashboard&nbsp;if&nbsp;the&nbsp;request&nbsp;has&nbsp;a&nbsp;valid&nbsp;cookie,&nbsp;otherwise&nbsp;returns&nbsp;index.html&nbsp;(landing&nbsp;page)</tt></dd></dl>
+ <dl><dt><a name="-logout"><strong>logout</strong></a>()</dt><dd><tt>Authenticated&nbsp;players&nbsp;(whose&nbsp;requests&nbsp;have&nbsp;a&nbsp;cookie)&nbsp;are&nbsp;logged&nbsp;out,&nbsp;and&nbsp;their&nbsp;corresponding&nbsp;Player&nbsp;object&nbsp;in<br>
+active_players&nbsp;gets&nbsp;removed.<br>
+:return:&nbsp;index.html&nbsp;-&nbsp;request&nbsp;cookie</tt></dd></dl>
+ <dl><dt><a name="-new_flashcard"><strong>new_flashcard</strong></a>()</dt><dd><tt>Brings&nbsp;the&nbsp;player&nbsp;to&nbsp;the&nbsp;flashcard&nbsp;creation&nbsp;page&nbsp;where&nbsp;they&nbsp;can&nbsp;create&nbsp;a&nbsp;new&nbsp;flashcard&nbsp;and&nbsp;insert&nbsp;it&nbsp;into&nbsp;a&nbsp;set&nbsp;of&nbsp;their&nbsp;choice.<br>
+:return:&nbsp;flashcard.html&nbsp;with&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;player's&nbsp;different&nbsp;flashcard&nbsp;sets</tt></dd></dl>
+ <dl><dt><a name="-profile"><strong>profile</strong></a>()</dt><dd><tt>Brings&nbsp;players&nbsp;to&nbsp;the&nbsp;profile&nbsp;page,&nbsp;where&nbsp;they&nbsp;can&nbsp;edit&nbsp;their&nbsp;profile&nbsp;(Player)&nbsp;information&nbsp;and&nbsp;view&nbsp;their&nbsp;amount&nbsp;of&nbsp;points.<br>
+:return:&nbsp;profile.html&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-serve_dashboard"><strong>serve_dashboard</strong></a>()</dt><dd><tt>Accepts&nbsp;POST&nbsp;form&nbsp;data&nbsp;generated&nbsp;by&nbsp;index.html&nbsp;and&nbsp;checks&nbsp;database&nbsp;to&nbsp;see&nbsp;if&nbsp;credentials&nbsp;from&nbsp;form&nbsp;match.&nbsp;If&nbsp;a&nbsp;match<br>
+is&nbsp;found,&nbsp;the&nbsp;player&nbsp;is&nbsp;logged&nbsp;in&nbsp;and&nbsp;their&nbsp;corresponding&nbsp;Player&nbsp;object&nbsp;is&nbsp;inserted&nbsp;into&nbsp;the&nbsp;active_players&nbsp;dictionary.<br>
+:return:&nbsp;dashboard.html&nbsp;+&nbsp;cookie&nbsp;if&nbsp;login&nbsp;successful,&nbsp;index.html&nbsp;with&nbsp;a&nbsp;login&nbsp;error&nbsp;if&nbsp;login&nbsp;unsuccessful</tt></dd></dl>
+ <dl><dt><a name="-shop"><strong>shop</strong></a>()</dt><dd><tt>Brings&nbsp;players&nbsp;to&nbsp;the&nbsp;item&nbsp;shop,&nbsp;where&nbsp;they&nbsp;can&nbsp;buy&nbsp;items&nbsp;and&nbsp;have&nbsp;them&nbsp;added&nbsp;to&nbsp;their&nbsp;inventory&nbsp;which&nbsp;they&nbsp;can&nbsp;use<br>
+to&nbsp;help&nbsp;them&nbsp;in&nbsp;testing&nbsp;mode.<br>
+:return:&nbsp;shop.html&nbsp;+&nbsp;viable&nbsp;shop&nbsp;items&nbsp;+&nbsp;the&nbsp;player's&nbsp;points&nbsp;+&nbsp;the&nbsp;player's&nbsp;current&nbsp;inventory</tt></dd></dl>
+ <dl><dt><a name="-signup"><strong>signup</strong></a>()</dt><dd><tt>Sends&nbsp;back&nbsp;the&nbsp;signup&nbsp;page&nbsp;for&nbsp;prospective&nbsp;players&nbsp;who&nbsp;want&nbsp;to&nbsp;make&nbsp;an&nbsp;account&nbsp;by&nbsp;clicking&nbsp;"create&nbsp;an&nbsp;account"&nbsp;on&nbsp;index.html.<br>
+:return:&nbsp;signup.html</tt></dd></dl>
+ <dl><dt><a name="-single_set_page"><strong>single_set_page</strong></a>()</dt><dd><tt>Shows&nbsp;the&nbsp;player&nbsp;all&nbsp;the&nbsp;flashcards&nbsp;in&nbsp;the&nbsp;set&nbsp;specified&nbsp;by&nbsp;the&nbsp;GET&nbsp;request&nbsp;argument&nbsp;(card_set).<br>
+:return:&nbsp;single_set.html&nbsp;with&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;flashcard&nbsp;set,&nbsp;its&nbsp;flashcards,&nbsp;and&nbsp;names&nbsp;of&nbsp;all&nbsp;the&nbsp;other&nbsp;flashcard&nbsp;sets</tt></dd></dl>
+ <dl><dt><a name="-study"><strong>study</strong></a>()</dt><dd><tt>Brings&nbsp;players&nbsp;into&nbsp;study&nbsp;mode,&nbsp;where&nbsp;they&nbsp;answer&nbsp;MC&nbsp;questions&nbsp;generated&nbsp;by&nbsp;a&nbsp;chosen&nbsp;flashcard&nbsp;set.<br>
+:return:&nbsp;study.html&nbsp;with&nbsp;a&nbsp;set&nbsp;of&nbsp;flashcards&nbsp;("questions")</tt></dd></dl>
+ <dl><dt><a name="-testing_mode"><strong>testing_mode</strong></a>()</dt><dd><tt>Brings&nbsp;players&nbsp;into&nbsp;testing&nbsp;mode,&nbsp;where&nbsp;they&nbsp;earn&nbsp;points&nbsp;by&nbsp;answering&nbsp;fill-in-the-blank&nbsp;style&nbsp;questions&nbsp;for&nbsp;their<br>
+chosen&nbsp;flashcard&nbsp;set.<br>
+:return:&nbsp;testing_mode.html&nbsp;+&nbsp;a&nbsp;set&nbsp;of&nbsp;flashcards</tt></dd></dl>
+ <dl><dt><a name="-update_email"><strong>update_email</strong></a>()</dt><dd><tt>Accepts&nbsp;JSON&nbsp;POST&nbsp;data&nbsp;generated&nbsp;by&nbsp;profile.html&nbsp;and&nbsp;updates&nbsp;the&nbsp;email&nbsp;for&nbsp;the&nbsp;player&nbsp;in&nbsp;active_players&nbsp;and&nbsp;the&nbsp;database.<br>
+:return:&nbsp;blank&nbsp;response&nbsp;with&nbsp;200&nbsp;status&nbsp;code&nbsp;that&nbsp;responds&nbsp;back&nbsp;to&nbsp;profile.js</tt></dd></dl>
+ <dl><dt><a name="-update_flashcard"><strong>update_flashcard</strong></a>()</dt><dd><tt>Accepts&nbsp;POST&nbsp;form&nbsp;data&nbsp;for&nbsp;updates&nbsp;to&nbsp;a&nbsp;flashcard,&nbsp;updating&nbsp;the&nbsp;database&nbsp;values&nbsp;where&nbsp;the&nbsp;flashcard&nbsp;sits.<br>
+:return:&nbsp;redirects&nbsp;to&nbsp;the&nbsp;flashcard's&nbsp;individual&nbsp;set&nbsp;page&nbsp;to&nbsp;show&nbsp;the&nbsp;reflected&nbsp;change</tt></dd></dl>
+ <dl><dt><a name="-update_password"><strong>update_password</strong></a>()</dt><dd><tt>Accepts&nbsp;JSON&nbsp;POST&nbsp;data&nbsp;generated&nbsp;by&nbsp;profile.html&nbsp;and&nbsp;updates&nbsp;the&nbsp;password&nbsp;for&nbsp;the&nbsp;player&nbsp;in&nbsp;the&nbsp;database,&nbsp;first&nbsp;checking<br>
+that&nbsp;the&nbsp;player's&nbsp;old&nbsp;password&nbsp;matches&nbsp;what&nbsp;is&nbsp;in&nbsp;the&nbsp;database.<br>
+:return:&nbsp;blank&nbsp;response&nbsp;with&nbsp;200&nbsp;status&nbsp;code&nbsp;that&nbsp;responds&nbsp;back&nbsp;to&nbsp;profile.js&nbsp;if&nbsp;the&nbsp;old&nbsp;password&nbsp;is&nbsp;found,&nbsp;400&nbsp;status&nbsp;if&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-update_username"><strong>update_username</strong></a>()</dt><dd><tt>Accepts&nbsp;JSON&nbsp;POST&nbsp;data&nbsp;generated&nbsp;by&nbsp;profile.html&nbsp;and&nbsp;updates&nbsp;the&nbsp;username&nbsp;for&nbsp;the&nbsp;player&nbsp;in&nbsp;active_players&nbsp;and&nbsp;the&nbsp;database.<br>
+:return:&nbsp;blank&nbsp;response&nbsp;with&nbsp;200&nbsp;status&nbsp;code&nbsp;that&nbsp;responds&nbsp;back&nbsp;to&nbsp;profile.js</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>active_players</strong> = {}<br>
+<strong>annotations</strong> = _Feature((3, 7, 0, 'beta', 1), (3, 11, 0, 'alpha', 0), 16777216)<br>
+<strong>app</strong> = &lt;Flask 'app'&gt;<br>
+<strong>appcontext_popped</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16faad0; 'appcontext-popped'&gt;<br>
+<strong>appcontext_pushed</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16faaa0; 'appcontext-pushed'&gt;<br>
+<strong>appcontext_tearing_down</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16faa10; 'appcontext-tearing-down'&gt;<br>
+<strong>before_render_template</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16f9e10; 'before-render-template'&gt;<br>
+<strong>connection</strong> = &lt;sqlite3.Connection object&gt;<br>
+<strong>current_app</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>cursor</strong> = &lt;sqlite3.Cursor object&gt;<br>
+<strong>database_path</strong> = PosixPath('database/players_db.db')<br>
+<strong>g</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>got_request_exception</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16fa1d0; 'got-request-exception'&gt;<br>
+<strong>key</strong> = &lt;_io.TextIOWrapper name='app_secret_key.txt' mode='r' encoding='UTF-8'&gt;<br>
+<strong>message_flashed</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f15f9780; 'message-flashed'&gt;<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>request_finished</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16fa170; 'request-finished'&gt;<br>
+<strong>request_started</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16f9de0; 'request-started'&gt;<br>
+<strong>request_tearing_down</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16fa1a0; 'request-tearing-down'&gt;<br>
+<strong>session</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>template_rendered</strong> = &lt;blinker.base.NamedSignal object at 0x7fa4f16f9ed0; 'template-rendered'&gt;</td></tr></table>
+</body></html>
