@@ -1,0 +1,75 @@
+@font-face {
+    src: url("assets/Macondo-Regular.ttf");
+    font-family: "Macondo";
+}
+
+body {
+    font-family: Macondo, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/mossy_cobble.jpg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    margin: 0;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+
+#scrollBox, #info {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    position: absolute;
+    padding: 5px;
+}
+
+#info {
+    /*border: 5px solid red;*/
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 185px;
+    z-index: 10;
+}
+
+#scrollBox img {
+    width: 80%;
+    height: 80%;
+}
+
+.containers {
+    /*border: 5px solid red;*/
+    text-align: left;
+}
+
+.choice {
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    /*border: 5px solid blue;*/
+    display: inline-block;
+}
+
+.boxes {
+    /*border: 5px solid green;*/
+    font-family: Verdana, sans-serif;
+    display: inline-block;
+}
+
+#bottom {
+    /*border: 5px solid red;*/
+    text-align: center;
+}
+
+#points {
+    float: left;
+}
+
+#dashboard {
+    color: rgba(0, 0, 0, 1.0);
+    float: right;
+}
+

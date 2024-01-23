@@ -1,0 +1,180 @@
+@font-face {
+    src: url("assets/Macondo-Regular.ttf");
+    font-family: "Macondo";
+}
+
+:root {
+    --font: Macondo, sans-serif;
+    --font-color: rgba(200, 200, 200, 0.9);
+}
+
+html {
+    height: 100%;
+    /*background-image: url('../static/assets/background/forest.jpg');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+}
+
+body {
+    background-image: url("assets/mossy_cobble.jpg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    margin: 0;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 50%;
+    background-image: url('../static/assets/flashcards/banner.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 100px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: var(--font);
+    text-align: center;
+    font-size: 64px;
+    color: rgba(0, 0, 0, 1.0);
+    margin-top: -40px;
+}
+
+.flashcard_set_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 80px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.flashcard_set_list li {
+    border: none;
+    padding: 160px; 
+    text-align: center;
+    background-color: transparent;
+    background-image: url('../static/assets/flashcards/book.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -80px;
+}
+
+.flashcard_set_list li a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #f6f6d8;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul.flashcard_set_list li a.delete {
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    background-color: transparent;
+    background-image: url('../static/assets/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    color: #f6f6d8;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: var(--font);
+}
+
+ul.flashcard_set_list li a:hover {
+    text-decoration: underline;
+}
+
+.header2 {
+    background-image: url('../static/assets/flashcards/banner.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 350px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: var(--font);
+    font-size: 40px;
+    color: rgba(0, 0, 0, 1.0);
+    margin-top: -20px;
+}
+
+.new-set {
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--font-color);
+    font-family: var(--font);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input { /* might need to set this to #newSetInput */
+    font-family: var(--font);
+    background-color: #f6f6d8;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: transparent;
+    background-image: url('../static/assets/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f6f6d8;
+    font-family: var(--font);
+    border: none;
+    padding: 40px 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.dashboard {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.top-buttons img {
+    width: 48px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1300px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: -30px;
+    }
+}

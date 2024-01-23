@@ -1,0 +1,107 @@
+@font-face {
+    src: url("assets/Macondo-Regular.ttf");
+    font-family: "Macondo";
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/mossy_cobble.jpg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    margin: 0;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding: 0;
+}
+
+#topbar {
+    width: 100%;
+    height: 48px; /* 32 for the buttons + 2 * 8 for the margins */
+    margin: 0;
+    padding: 0;
+    background-color: rgba(56, 60, 64, 1.0);
+}
+
+#banner {
+    width: 30%;
+    height: 48px;
+    display: inline-block;
+    margin-left: 35%;
+}
+
+#banner p{
+    text-align: center;
+    font-family: Macondo, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(200, 200, 200, 0.9);
+    margin: 8px;
+}
+
+.options {
+    float: right;
+    margin: 8px;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/background/scroll background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+#selectors {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    /*border: 5px dashed red;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* https://www.w3schools.com/csS/css_align.asp */
+}
+
+.selector {
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
+    /*cosmetic change: give selectors a brown, circular, gradient background*/
+    border: 3px solid rgba(0, 0, 0, 1.0);
+    border-radius: 64px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#chooseFlashcard {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 15px;
+}
+
+#flashcard_set {
+    width: 100%;
+    font-size: 1.2;
+    text-align: center;
+    background-color: rgba(56, 60, 64, 1.0);
+    color: rgba(200, 200, 200, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.icon {
+    display: block;
+    margin: auto;
+}

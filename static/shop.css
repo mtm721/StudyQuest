@@ -1,0 +1,120 @@
+@font-face {
+    src: url("assets/Macondo-Regular.ttf");
+    font-family: "Macondo";
+}
+
+body {
+    font-family: Macondo, sans-serif;
+    background-image: url("assets/mossy_cobble.jpg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    margin: 0;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    /*margin: auto;*/
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    margin: 0 10px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 14px;
+}
+
+.item button {
+    background-color: seagreen;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100px;
+}
+
+.item button.owned-item {
+    background-color: firebrick;
+    color: white;
+}
+
+.item button:hover {
+    background-color: darkgreen;
+}
+
+.item button.owned-item:hover {
+    background-color: darkred;
+}
+
+#player-info {
+    text-align: left;
+}
+
+#player-points {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#player-inventory {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.owned-item {
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#dashboard {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dashboard {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}

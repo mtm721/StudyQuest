@@ -1,0 +1,67 @@
+@font-face {
+    src: url("assets/Macondo-Regular.ttf");
+    font-family: "Macondo";
+}
+
+body {
+    font-family: Macondo, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/mossy_cobble.jpg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    margin: 0;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+
+#signup {
+    color: rgba(0, 0, 0, 1.0);
+}
+
+#scrollBox, #signupbox {
+    text-align: center;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    position: absolute;
+    padding: 5px;
+}
+
+#signupbox {
+    margin-top: 170px;
+    z-index: 10;
+}
+
+#scrollBox img {
+    width: 60%;
+    height: 60%;
+}
+
+.prompts {
+    width: 290px;
+    background-color: rgba(56, 60, 64, 1.0);
+    color: rgba(200, 200, 200, 0.9);
+    font-size: 20px;
+    text-align: center;
+    border-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+#button {
+    font-family: Macondo, sans-serif;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(90, 90, 90, 0.95), rgba(20, 20, 20, 0.9));
+    border-color: rgba(35, 35, 40, 0.7);
+    border-style: hidden;
+    color: rgba(200, 200, 200, 0.9);
+    cursor: pointer;
+}

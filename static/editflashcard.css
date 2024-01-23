@@ -1,0 +1,150 @@
+@font-face {
+    src: url("assets/Macondo-Regular.ttf");
+    font-family: "Macondo";
+}
+
+:root {
+    --font: Macondo, sans-serif;
+    --font-color: rgba(200, 200, 200, 0.9);
+}
+
+html {
+    /*background-image: url('../static/assets/background/forest.jpg');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+    background-image: url("assets/mossy_cobble.jpg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    margin: 0;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('../static/assets/flashcards/banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 100px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: var(--font);
+    text-align: center;
+    font-size: 64px;
+    color: rgba(0, 0, 0, 1.0);
+    margin-top: -35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.edit-flashcard {
+    padding: 150px 150px 100px 150px;
+}
+
+.card {
+    display: flex;
+    margin-top: -80px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 200px 200px;
+    border: none;
+    font-size: 24px;
+    font-family: var(--font);
+    text-align: center;
+    background-color: transparent;
+    background-image: url('../static/assets/background/scroll background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input::placeholder {
+    font-size: 22px;
+    font-family: var(--font);
+}
+
+input:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    margin-top: 40px;
+}
+
+button {
+    background-color: transparent;
+    background-image: url('../static/assets/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    border: none;
+    padding: 40px 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: var(--font);
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.update-flashcard {
+    display: block;
+    text-align: center;
+}
+
+.cancel a{
+    background-color: transparent;
+    background-image: url('../static/assets/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    border: none;
+    padding: 40px 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+.cancel a:hover {
+    text-decoration: underline;
+}
+
+.dashboard {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.view-sets {
+    position: absolute;
+    top: 30px;
+    right: 90px;
+}
+
+.top-buttons img {
+    width: 48px;
+    height: auto;
+}
